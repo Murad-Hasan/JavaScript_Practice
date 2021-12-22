@@ -54,3 +54,44 @@ const res13 = str.repeat(3);
 console.log("res13", res13);
 
 // replace
+const strRep = string1.replace(/in/g, "on")
+console.log(strRep)
+
+//search
+const seaStr = 'How are you?'
+const seaRes = seaStr.search(/o/);
+console.log(seaRes);
+
+// slice
+const strSlice = string1.slice(0, 8);
+console.log(strSlice);
+
+//spit
+const strSpit = string1.split(" ");
+console.log(strSpit);
+
+//startsWith
+const strStarts = string1.startsWith("the");
+console.log(strStarts);
+
+//substr
+const strSub = "I am a student";
+const resSub = strSub.substr(5, 4);
+console.log(resSub);
+
+//substring
+const strSub1 = "I am a PROGRAMMER";
+const resSub1 = strSub1.substring(5, 10);
+console.log(resSub1);
+
+//lowerCase
+const strLower = strSub.toLowerCase();
+console.log(strLower);
+//upperCase
+const strUpper = strSub.toUpperCase();
+console.log(strUpper);
+
+//trim 
+const strTrim = "  I am a        student  ";
+const resTrim = strTrim.trim();
+console.log(resTrim);
