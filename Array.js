@@ -57,9 +57,9 @@ console.log(fruits);
 
 //spread operator
 
-let a = [1, 2, 3];
-let b = [0, ...a, 4];
-console.log(b); // [0, 1, 2, 3, 4]
+let a1 = [1, 2, 3];
+let b1 = [0, ...a1, 4];
+console.log(b1); // [0, 1, 2, 3, 4]
 
 let digits = [..."123456789ABCDEFGH"]
 console.log(digits); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G']
@@ -82,4 +82,35 @@ Array.of(1); // [1]
 Array.of(); // []
 
 //array from
+let array = Array.from("Hello World");
+console.log(array)// ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d"]
 
+
+// Reading and writing of a array
+
+let a = ["world"];
+let value = a[0] // "world"
+a[1] = 3.14;
+let i = 2;
+a[i] = 3;
+a[i + 1] = "hellol";
+a[a[i]] = a[0]; // --> bujhi nai asole ki hoise akhane 
+console.log(a[a[i]]);
+console.log(a); // ["world", 3.14, 3, "hellol", "world"]
+
+//Iterating over an array
+
+let letters1 = [..."Hello World"];
+let string = "";
+for (let letter of letters1){
+  string = string + letter; //string += letter;
+}
+console.log(letters1, string); // "Hello World"
+
+//if we want to use a for/of loop for an array and need to know the index of each array element 
+
+let everyother = "";
+for (let [index, letter] of letters1.entries()){
+  if(index % 2 === 0) everyother += letter;
+}
+console.log(everyother);
