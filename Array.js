@@ -109,8 +109,23 @@ console.log(letters1, string); // "Hello World"
 
 //if we want to use a for/of loop for an array and need to know the index of each array element 
 
-let everyother = "";
-for (let [index, letter] of letters1.entries()){
-  if(index % 2 === 0) everyother += letter;
+// let everyother = "";
+// for (let [index, letter] of letters1.entries()){
+//   if(index % 2 === 0) everyother += letter;
+// }
+// console.log(everyother);
+
+//vowels finder
+let vowels = "";
+// for (let i = 0; i < letters1.length; i++){
+//   let letter = letters1[i]
+//   if(/[aeiou]/.test(letter)) vowels += letter;
+// }
+
+
+//or
+
+for (const letter of letters1){
+  if(/[aeiou]/.test(letter)) vowels += letter
 }
-console.log(everyother);
+console.log(vowels);
