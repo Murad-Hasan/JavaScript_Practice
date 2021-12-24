@@ -46,3 +46,13 @@ let biggerCities = cities.filter(city => city.population >= 100 && city.temperat
 
 
 cities.filter(city => city.population < 100).sort((a, b) => a.population - b.population).map(city => console.log(city.name + ":" + city.population));
+
+console.log("hello world");
+
+let fruits = []
+fruits[9999] = 5;
+fruits.age = 9;
+
+console.log(fruits);
+
+
