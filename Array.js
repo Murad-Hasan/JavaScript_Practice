@@ -65,8 +65,8 @@ let digits = [..."123456789ABCDEFGH"]
 console.log(digits); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G']
 
 // creat a new array from an array without reapted values
-let letters = [..."Hello World"]
-let notRepeatLetters = [...new Set(letters)]
+let letters = [..."Hello World"] // ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d"]
+let notRepeatLetters = [...new Set(letters)]  // ["H", "e", "l", "o", "W", "r", "d"]
 
 console.log(letters); // ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
 console.log(notRepeatLetters); // ['H', 'e', 'l', 'o', 'W', 'r', 'd']
@@ -80,4 +80,6 @@ console.log(notRepeadNumbers); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 Array.of(1, 2, 3); // [1, 2, 3]
 Array.of(1); // [1]
 Array.of(); // []
+
+//array from
 
