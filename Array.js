@@ -153,13 +153,28 @@ console.log(data); // [6, 12, 18, 24, 30, 36, 42, 48, 54, 60]
 
 //Find & FindIndex
 
-let data1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let found = data1.find((value) => value % 3 === 0);
-console.log(found); // 6
-let found = data1.find((value) => value % 12 === 0);
-console.log(found); // undefined (not found)
-let fountIndex = data1.findIndex((value) => value % 3 === 0);
-console.log(fountIndex); // 2
-let foundIndex = data1.findIndex((value) => value % 11 === 0);
-console.log(foundIndex);   // -1 (not found)
+// let data1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let found = data1.find((value) => value % 3 === 0);
+// console.log(found); // 6
+// let found = data1.find((value) => value % 12 === 0);
+// console.log(found); // undefined (not found)
+// let fountIndex = data1.findIndex((value) => value % 3 === 0);
+// console.log(fountIndex); // 2
+// let foundIndex = data1.findIndex((value) => value % 11 === 0);
+// console.log(foundIndex);   // -1 (not found)
+
+//reduce
+const arrayReducerText = [15, 16, 17, 18, 19];
+
+function reducer(previous, current, index, array) {
+  const returns = previous + current;
+  console.log(`previous: ${previous}, current: ${current}, index: ${index}, returns: ${returns}`);
+  return returns;
+}
+
+arrayReducerText.reduce(reducer);
+
+// arrayReducerText.reduce((x,y) => x + y);    
+
+console.log(arrayReducerText.reduce((x,y) => x + y, 0)); //85
 
