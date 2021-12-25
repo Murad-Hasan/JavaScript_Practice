@@ -187,3 +187,20 @@ console.log(flatTest.flat(Infinity));   // [1, 2, 3, 4, 5, 9]
 let phrases = ["hello world", "goodbye world"];
 let phrasesWords = phrases.flatMap((phrase) => phrase.split(" "));  
 console.log(phrasesWords); // ["hello", "world", "goodbye", "world"]
+
+//pop, push, shift, unshift 
+
+
+//slice
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sliced = arr.slice(2, 5);
+console.log(sliced)
+let sliced1 = arr.slice(-5, -2)
+console.log(sliced1)
+
+//splice
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
+// let spliced = arr1.splice(3);
+let spliced = arr1.splice(3, 2);
+console.log(spliced);  
+console.log(arr1);
