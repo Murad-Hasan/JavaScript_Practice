@@ -178,3 +178,12 @@ arrayReducerText.reduce(reducer);
 
 console.log(arrayReducerText.reduce((x,y) => x + y, 0)); //85
 
+[1,[2,3]].flat(); // [1,2,3] 
+
+const flatTest = [1, [2,[3,4, [9]],5]]
+console.log(flatTest.flat(Infinity));   // [1, 2, 3, 4, 5, 9]
+
+//flatMap
+let phrases = ["hello world", "goodbye world"];
+let phrasesWords = phrases.flatMap((phrase) => phrase.split(" "));  
+console.log(phrasesWords); // ["hello", "world", "goodbye", "world"]
