@@ -72,9 +72,9 @@ console.log(letters); // ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
 console.log(notRepeatLetters); // ['H', 'e', 'l', 'o', 'W', 'r', 'd']
 
 let numbers = [1, 2, 3, 4, 5, 6,6, 7, 7, 8, 9, 10];
-let notRepeadNumbers = [...new Set(numbers)];
+let notRepeatedNumbers = [...new Set(numbers)];
 console.log(numbers); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log(notRepeadNumbers); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(notRepeatedNumbers); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 //array of 
 Array.of(1, 2, 3); // [1, 2, 3]
